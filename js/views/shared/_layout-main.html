@@ -1,0 +1,33 @@
+<html ng-app="homeModule">
+<head>
+    <title>KE Jokes</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="static/javascripts/vendor/angular.js"></script>
+    <script src="static/javascripts/vendor/angular-resource.js"></script>
+    <script src="static/javascripts/vendor/angular-route.js"></script>
+    <script src="static/javascripts/vendor/angular-cookies.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="controllers/jokes-main-controllers.js"></script>
+    <script src="services/jokes-main-service.js"></script>
+    
+    <script src="modules/home-module.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            
+            <img  class="col-md-1 img-responsive" src= "static/images/joke.jpg" />
+            <h1 class="col-md-9">KEJokes.com</h1>
+            <div class = "col-md-2 text-right"><a href="#/contact">Contact us</a></div>
+            
+        </div>
+        
+         <div class="row" ng-view>
+             
+         </div>
+        
+</body>
+</html>

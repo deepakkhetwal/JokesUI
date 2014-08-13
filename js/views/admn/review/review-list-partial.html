@@ -1,0 +1,26 @@
+	<div class="table-responsive">
+            <table class="table table-striped table-condensed">
+                <thead class="btn-success">
+                    <tr>
+                    <th class="hidden">id</th>
+                    <th>Reviewed Y/N</th>
+                    <th>Description </th>
+                    <th>User Email</th>
+                    <th>Joke Category</th>
+                    <th>Created Date</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="joke in jokesList.jokes">
+                        <td class="hidden">{{joke._id}}</td>
+                        <td><input type=checkbox> {{joke.is_reviewed}}</td>
+                        <td><textarea >{{joke.description}}</textarea></td>
+                        <td><input type="text" value= {{joke.user_email}}></td>
+                        <td><input type="text" value={{joke.joke_category}}></td>
+                        <td>{{joke.date_created |  date: "MM/dd/yyyy"}}</td>
+                        <td><button class="btn btn-primary" ng-click="saveReview()"><span class="glyphicon glyphicon-floppy-disk"></span></button> <button class="btn-success"><span class="glyphicon glyphicon-remove"></span></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

@@ -1,17 +1,22 @@
 
+        
         <div class="row text-right">
             <div class="col-md-12">   
              <a href="#/jokes/create">Post New Joke</a>
             </div>
          </div>
-
-                
-    	<div class=table-responsive>
+        <form class="form-inline" ng-submit="search()" role="form">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" ng-model="pagingInfo.search" placeholder="Search...">
+                <button type="submit" class="btn btn-info btn-sm"><strong>Search</strong></button>
+            </div>
+        </form> 
+    	   
             <table class="table table-striped table-condensed">
                 <thead class="btn-success">
                     <tr>
                     
-                    <th> Here are your Jokes below! </th>
+                    <th> <a href="" ng-click="sort('date_created')">Here are your Jokes below! </a></th>
                    
                     </tr>
                 </thead>
@@ -25,6 +30,12 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        <pagination page="pagingInfo.page"
+            total-items="pagingInfo.totalItems"
+            items-per-page="pagingInfo.itemsPerPage"
+            on-select-page="selectPage(page)"
+            max-size="10"
+            rotate="false"
+            boundary-links="true"></pagination>
 
 

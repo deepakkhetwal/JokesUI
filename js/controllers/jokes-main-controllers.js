@@ -1,7 +1,50 @@
 var jokesMainControllers =  angular.module('jokesMainControllers',[]);
 jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', function($scope, jokesMainService){
 
-	$scope.jokesList = jokesMainService.GetJokeList.query();
+	
+
+	   $scope.pagingInfo = {
+            page: 1,
+            itemsPerPage: 1,
+            sortBy: 'date_created',
+            reverse: false,
+            search: '',
+            totalItems: 0
+        };
+         
+        $scope.search = function () {
+            $scope.pagingInfo.page = 1;
+            loadJokes();
+        };
+ 
+        $scope.sort = function (sortBy) {
+            if (sortBy === $scope.pagingInfo.sortBy) {
+                $scope.pagingInfo.reverse = !$scope.pagingInfo.reverse;
+            } else {
+                $scope.pagingInfo.sortBy = sortBy;
+                $scope.pagingInfo.reverse = false;
+            }
+            $scope.pagingInfo.page = 1;
+            loadJokes();
+        };
+ 
+        $scope.selectPage = function (page) {
+            $scope.pagingInfo.page = page;
+            loadJokes();
+        };
+ 
+        function loadJokes() {
+        	
+        	$scope.jokesList = null;
+            $scope.jokesList = jokesMainService.GetJokeList.query($scope.pagingInfo);
+            
+             
+           
+        }
+ 
+        // initial table load
+        loadJokes();
+ 
 	
 }]);
 

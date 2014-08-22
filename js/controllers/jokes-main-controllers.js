@@ -53,7 +53,7 @@ jokesMainControllers.controller('jokesPostCtrl',['$scope','jokesMainService','$l
  var joke = JSON.stringify({Description : $scope.jokeDescription, joke_category : $scope.joke_category, user_email : $scope.user_email});
   //   newCard.description = "Mike Smith";
  jokesMainService.CreateJoke.save(joke);
- $location.path("/jokes");
+ $location.path("/");
 };
 
 }])

@@ -36,7 +36,7 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', 
         function loadJokes() {
         	
         	$scope.jokesList = null;
-            $scope.jokesList = jokesMainService.GetJokeList.query($scope.pagingInfo);
+            $scope.jokesList = jokesMainService.GetJokeList.query();
             
              
            

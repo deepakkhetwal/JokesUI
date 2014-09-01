@@ -37,7 +37,7 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', 
         	
         	$scope.jokesList = null;
             $scope.jokesList = jokesMainService.GetJokeList.query();
-            
+            $scope.predicate = '-date_created';
              
            
         }

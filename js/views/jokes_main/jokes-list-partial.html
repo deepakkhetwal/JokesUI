@@ -17,7 +17,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="joke in jokesList.jokes">
+                    <tr ng-repeat="joke in jokesList.jokes| orderBy:predicate:reverse">
                       
                         <td>
                             {{joke.description}}

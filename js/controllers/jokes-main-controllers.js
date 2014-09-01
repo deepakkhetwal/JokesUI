@@ -50,10 +50,13 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', 
 
 jokesMainControllers.controller('jokesPostCtrl',['$scope','jokesMainService', function($scope, jokesMainService){
  $scope.submit = function() {
- var joke = JSON.stringify({Description : $scope.jokeDescription, joke_category : $scope.joke_category, user_email : $scope.user_email});
-  //   newCard.description = "Mike Smith";
- jokesMainService.CreateJoke.save(joke);
- $scope.jokeDescription = "";
+    
+     var joke = JSON.stringify({Description : $scope.jokeDescription, joke_category : $scope.joke_category, user_email : $scope.user_email});
+      //   newCard.description = "Mike Smith";
+     jokesMainService.CreateJoke.save(joke);
+     $scope.jokeDescription = "";
+     showGlobalMessageAlert("Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen."); 
+
 
 };
 

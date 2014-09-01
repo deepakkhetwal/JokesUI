@@ -2,6 +2,7 @@
 <html ng-app="homeModule">
 <head>
 <meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="Description" CONTENT="jokes for kids deepak khetwal">
     <title>Joke for Kids</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -17,7 +18,7 @@
     <script src="services/admn/review-service.js"></script>
 
     <script src="modules/home-module.js"></script>
-  
+    <script src="static/javascripts/application/common.js"></script>
 
 </head>
 <body>
@@ -31,9 +32,15 @@
             
         </div>
         <div class="row">&nbsp; </div>
+        <div class="alert alert-success hidden" id="globalMessageParent">
+          <button type="button" class="close" onclick="closeGlobalMessageAlert()"><span>&times;</span><span class="sr-only">Close</span></button>
+          <span id="globalMessage">Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen. </span>
+        </div>
+         
          <div class="row" ng-view>
              
          </div>
+         
         
 </body>
 </html>

@@ -5,7 +5,8 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		when('/', {templateUrl: 'views/jokes_main/jokes-list-partial.html', controller: 'jokesMainCtrl'})
 		.when('/jokes/create', {templateUrl: 'views/jokes_main/jokes-post-partial.html', controller:'jokesPostCtrl'})
 		.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
-		.when('/contact', {templateUrl: 'views/contact.html'});
+		.when('/contact', {templateUrl: 'views/contact.html'})
+		.when('/about',{templateUrl: 'views/about.html'});
 
 }])
 .factory('$exceptionHandler', function () {

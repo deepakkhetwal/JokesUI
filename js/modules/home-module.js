@@ -1,4 +1,6 @@
-var homeModule = angular.module('homeModule',['ngRoute','jokesMainControllers', 'jokesMainService', 'reviewControllers', 'reviewService']);
+var homeModule = angular.module('homeModule',['ngRoute','jokesMainControllers', 'jokesMainService', 'reviewControllers', 'reviewService'
+	, 'feedbacksMainControllers', 'feedbacksMainService'
+	]);
 homeModule.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider.
@@ -6,7 +8,8 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/jokes/create', {templateUrl: 'views/jokes_main/jokes-post-partial.html', controller:'jokesPostCtrl'})
 		.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
 		.when('/contact', {templateUrl: 'views/contact.html'})
-		.when('/about',{templateUrl: 'views/about.html'});
+		.when('/about',{templateUrl: 'views/about.html'})
+		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
 
 }])
 .factory('$exceptionHandler', function () {

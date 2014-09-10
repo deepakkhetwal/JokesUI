@@ -4,7 +4,7 @@ var feedbacksMainControllers =  angular.module('feedbacksMainControllers',[]);
 feedbacksMainControllers.controller('feedbacksPostCtrl',['$scope','feedbacksMainService', function($scope,feedbacksMainService){
  $scope.submit = function() {
     
-     var feedback = JSON.stringify({description : $scope.feedbackDescription, contact_no : $scope.contact_no, user_email : $scope.user_email});
+     var feedback = JSON.stringify({description : $scope.description, contact_no : $scope.contact_no, user_email : $scope.user_email});
       //   newCard.description = "Mike Smith";
      feedbacksMainService.CreateFeedback.save(feedback);
     

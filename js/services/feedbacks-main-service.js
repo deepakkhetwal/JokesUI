@@ -5,7 +5,7 @@ feedbacksMainService.factory('feedbacksMainService', ['$resource',
   	//throw { message: 'error message hello' };
     return {
     	//GetJokeList : $resource('http://kejokesapi.herokuapp.com/jokes', {}, {query: {method:'GET'}}),
-    	CreateFeedback: $resource('http://localhost:3000/feedbacks/create', {},{save: {method: 'POST' , headers: { 'Content-Type': 'application/json'}}})
+    	CreateFeedback: $resource('http://kejokesapi.herokuapp.com/feedbacks/create', {},{save: {method: 'POST' , headers: { 'Content-Type': 'application/json'}}})
 	};
   //  return $resource('http://localhost:3000/jokes/create', {},{
   //  	save: {method: 'POST'}

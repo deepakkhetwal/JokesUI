@@ -1,5 +1,5 @@
 var jokesMainControllers =  angular.module('jokesMainControllers',[]);
-jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', function($scope, jokesMainService){
+jokesMainControllers.controller('jokesMainCtrl', ['$scope', '$location','jokesMainService', function($scope, $location, jokesMainService){
 
 	
 
@@ -44,7 +44,13 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', 'jokesMainService', 
  
         // initial table load
         loadJokes();
- 
+        $scope.PostLike = function(id) {
+       
+          var obj = $.grep($scope.jokesList.jokes, function (e) { return e._id == id; });
+          var joke = JSON.stringify({id : obj[0]._id , is_liked : true});
+          jokesMainService.PostLike.save(joke);
+          loadJokes();
+        };
 	
 }]);
 
@@ -58,6 +64,10 @@ jokesMainControllers.controller('jokesPostCtrl',['$scope','jokesMainService', fu
      showGlobalMessageAlert("Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen."); 
 
 
+
 };
 
-}])
+
+
+
+}]);

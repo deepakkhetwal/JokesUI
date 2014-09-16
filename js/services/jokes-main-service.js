@@ -6,7 +6,7 @@ jokesMainService.factory('jokesMainService', ['$resource',
     return {
     	GetJokeList : $resource('http://kejokesapi.herokuapp.com/jokes', {}, {query: {method:'GET'}}),
     	CreateJoke: $resource('http://kejokesapi.herokuapp.com/jokes/create', {},{save: {method: 'POST' , headers: { 'Content-Type': 'application/json'}}}),
-      PostLike : $resource('http://kejokesapi.herokuapp.com//jokes/createlike', {},{save: {method: 'PUT' , headers: { 'Content-Type': 'application/json'}}})
+      PostLike : $resource('http://kejokesapi.herokuapp.com/jokes/createlike', {},{save: {method: 'PUT' , headers: { 'Content-Type': 'application/json'}}})
 	};
   //  return $resource('http://localhost:3000/jokes/create', {},{
   //  	save: {method: 'POST'}

@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="joke in jokesList.jokes| orderBy:predicate:reverse">
+                    <tr ng-repeat="joke in jokesList.jokes">
                       
                         <td>
                             {{joke.description}} <br><button ng-click="PostLike(joke._id)" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary "> </span> </button> 

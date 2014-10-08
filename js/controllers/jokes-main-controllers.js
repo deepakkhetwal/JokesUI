@@ -34,9 +34,10 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', '$location','jokesMa
         };
  
         function loadJokes() {
-        	
+        	$scope.dataLoaded = false;
         	$scope.jokesList = null;
-            $scope.jokesList = jokesMainService.GetJokeList.query();
+          $scope.jokesList = jokesMainService.GetJokeList.query(function(){$scope.dataLoaded = true;});
+          
           // $scope.predicate = '-date_created';
              
            

@@ -19,10 +19,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="joke in jokesList.jokes">
+                <tr class="text-center" ng-hide="dataLoaded">
+                    <td><label>Please wait, finding best jokes for you </label></td>
+                </tr>
+                    <tr ng-repeat="joke in jokesList.jokes" ng-show="dataLoaded">
                       
                         <td>
-                            {{joke.description}} <br><button ng-click="PostLike(joke._id)" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary "> </span> </button> 
+                            {{joke.description}} <br><button ng-click="PostLike(joke._id)" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary"> </span> </button> 
                             
                             <span ng-if = "joke.likes.length > 0"> &nbsp; <b><span id='cnt{{joke._id}}'>{{joke.likes.length}} </span> Likes </b></span>
                             <span id='{{joke._id}}' style="display:none"><label class="text-primary">You liked this joke!</label></span>

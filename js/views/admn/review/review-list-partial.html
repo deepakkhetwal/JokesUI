@@ -3,16 +3,16 @@
                 <thead class="btn-success">
                     <tr>
                     <th class="hidden">id</th>
-                    <th>Reviewed Y/N</th>
-                    <th>Description </th>
-                    <th>User Email</th>
-                    <th>Joke Category</th>
-                    <th>Created Date</th>
+                    <th><a href="" ng-click="predicate='is_reviewed'; reverse=!reverse">Reviewed Y/N</a></th>
+                    <th >Description </th>
+                    <th><a href="" ng-click="predicate='user_email'; reverse=!reverse">User Email</a></th>
+                    <th><a href="" ng-click="predicate='joke_category'; reverse=!reverse">Joke Category</a></th>
+                    <th><a href="" ng-click="predicate='date_created'; reverse=!reverse">Created Date</a></th>
                     <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="joke in jokesList.jokes">
+                    <tr ng-repeat="joke in jokesList.jokes | orderBy:predicate:reverse">
                         <td class="hidden" ng-model="joke._id"></td>
                         <td><input type="checkbox" ng-model="joke.is_reviewed"></td>
                         <td><textarea ng-model="joke.description"></textarea></td>

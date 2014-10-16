@@ -3,6 +3,7 @@ var reviewControllers = angular.module('reviewControllers',[]);
 reviewControllers.controller('reviewIndexCtrl',['$scope', 'reviewService', function($scope, reviewService)
 {
 	$scope.jokesList = reviewService.GetJokeList.query();
+	$scope.predicate = '-date_created';
 	$scope.SaveReview = function(id){
 		
 		var reviewObj = $.grep($scope.jokesList.jokes, function (e) { return e._id == id; });

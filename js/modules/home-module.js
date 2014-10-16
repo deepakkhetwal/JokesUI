@@ -9,6 +9,7 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
 		.when('/contact', {templateUrl: 'views/contact.html'})
 		.when('/about',{templateUrl: 'views/about.html'})
+		.when('/jokes/videolist', {templateUrl: 'views/jokes_main/jokes-list-videos-partial.html'})
 		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
 
 }])

@@ -12,11 +12,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="joke in jokesList.jokes | orderBy:predicate:reverse">
+                    <tr  ng-repeat="joke in jokesList.jokes | orderBy:predicate:reverse">
                         <td class="hidden" ng-model="joke._id"></td>
                         <td><input type="checkbox" ng-model="joke.is_reviewed"></td>
                         <td><textarea ng-model="joke.description"></textarea></td>
-                        <td><input type="text" ng-model="joke.user_email"></td>
+                        <td><input type="text" ng-model="joke.user_email"></td> 
                         <td><input type="text" ng-model="joke.joke_category"></td>
                         <td>{{joke.date_created |  date: "MM/dd/yyyy"}}</td>
                         <td><button class="btn btn-primary" ng-click="SaveReview(joke._id)"><span class="glyphicon glyphicon-floppy-disk"></span></button> <button class="btn-success"><span class="glyphicon glyphicon-remove"></span></button></td>

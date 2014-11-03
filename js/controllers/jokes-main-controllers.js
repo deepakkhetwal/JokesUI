@@ -1,50 +1,26 @@
 var jokesMainControllers =  angular.module('jokesMainControllers',[]);
-jokesMainControllers.controller('jokesMainCtrl', ['$scope', '$location','jokesMainService', function($scope, $location, jokesMainService){
+jokesMainControllers.controller('jokesMainCtrl', ['$scope', '$location','$filter','jokesMainService', function($scope, $location, $filter, jokesMainService){
 
-	
+	   var orderBy = $filter('orderBy');
+	   
+       $scope.order = function(predicate, reverse) {
 
-	   $scope.pagingInfo = {
-            page: 1,
-            itemsPerPage: 1,
-            sortBy: 'date_created',
-            reverse: false,
-            search: '',
-            totalItems: 0
-        };
-         
-        $scope.search = function () {
-            $scope.pagingInfo.page = 1;
-            loadJokes();
-        };
- 
-        $scope.sort = function (sortBy) {
-            if (sortBy === $scope.pagingInfo.sortBy) {
-                $scope.pagingInfo.reverse = !$scope.pagingInfo.reverse;
-            } else {
-                $scope.pagingInfo.sortBy = sortBy;
-                $scope.pagingInfo.reverse = false;
-            }
-            $scope.pagingInfo.page = 1;
-            loadJokes();
-        };
- 
-        $scope.selectPage = function (page) {
-            $scope.pagingInfo.page = page;
-            loadJokes();
-        };
+        $scope.jokesList = orderBy($scope.jokesList, predicate, reverse);
+      };
  
         function loadJokes() {
         	$scope.dataLoaded = false;
         	$scope.jokesList = null;
           $scope.jokesList = jokesMainService.GetJokeList.query(function(){$scope.dataLoaded = true;});
-          
-          // $scope.predicate = '-date_created';
-             
-           
+         // $scope.order('likesCount', false);
+      
         }
  
         // initial table load
         loadJokes();
+
+        $scope.loadJokes = function(){loadJokes();};
+
         $scope.PostLike = function(id) {
        
           
@@ -55,6 +31,10 @@ jokesMainControllers.controller('jokesMainCtrl', ['$scope', '$location','jokesMa
           $("#"+ id).show();
          
           
+        };
+
+        $scope.mostLiked = function(){
+          $scope.jokesList = jokesMainService.GetMostLikedList.query();
         };
 	
 }]);

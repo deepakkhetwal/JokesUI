@@ -10,7 +10,8 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/contact', {templateUrl: 'views/contact.html'})
 		.when('/about',{templateUrl: 'views/about.html'})
 		.when('/jokes/videolist', {templateUrl: 'views/jokes_main/jokes-list-videos-partial.html'})
-		.when('/jokes/upload', {templateUrl: 'views/jokes_main/jokes-upload-image.html'})
+		.when('/jokes/upload', {templateUrl: 'views/upload/jokes-video-upload.html'})
+
 		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
 
 }])

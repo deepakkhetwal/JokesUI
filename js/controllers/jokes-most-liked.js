@@ -16,7 +16,7 @@
                     <tr ng-repeat="joke in jokesList.jokes" ng-show="dataLoaded">
                       
                         <td>
-                            {{joke._id.description}} <br><button ng-click="PostLike(joke._id._id)" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary"> </span> </button> 
+                            {{joke._id.description}} <br><button ng-click="PostLike(joke._id)" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up text-primary"> </span> </button> 
                             
                             <b><span id='cnt{{joke._id._id}}'>{{joke.likesCount}} </span> Likes </b>
                             <span id='{{joke._id._id}}' style="display:none"><label class="text-primary">You liked this joke!</label></span>

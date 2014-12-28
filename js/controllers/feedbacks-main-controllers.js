@@ -8,7 +8,7 @@ feedbacksMainControllers.controller('feedbacksPostCtrl',['$scope','feedbacksMain
       //   newCard.description = "Mike Smith";
      feedbacksMainService.CreateFeedback.save(feedback);
     
-     showGlobalMessageAlert("Thanks for you feed back! please <a href='#/'>click here </a> to go to the jokes list "); 
+     COMMON.showGlobalMessageAlert("Thanks for you feed back! please <a href='#/'>click here </a> to go to the jokes list "); 
 
 
 };

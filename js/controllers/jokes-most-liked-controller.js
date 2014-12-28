@@ -11,15 +11,12 @@ jokesMostLikedControllers.controller('jokesMostLikedCtrl', ['$scope', 'jokesMain
  
         // initial table load
         loadJokes();
-
-         $scope.PostLike = function(id) {
-       
-          
-          var joke = JSON.stringify({id : id , is_liked : true});
-          jokesMainService.PostLike.save(joke);
-          var _numLikes = parseInt($("#cnt"+ id).text()) + 1;
-          $("#cnt"+ id).text(_numLikes);
-          $("#"+ id).show();
+        $scope.PostLike = function(id) {
+        var joke = JSON.stringify({id : id , is_liked : true});
+        jokesMainService.PostLike.save(joke);
+        var _numLikes = parseInt($("#cnt"+ id).text()) + 1;
+        $("#cnt"+ id).text(_numLikes);
+        $("#"+ id).show();
          
           
         };

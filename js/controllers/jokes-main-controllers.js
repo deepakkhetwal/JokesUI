@@ -46,7 +46,7 @@ jokesMainControllers.controller('jokesPostCtrl',['$scope','jokesMainService', fu
       //   newCard.description = "Mike Smith";
      jokesMainService.CreateJoke.save(joke);
      $scope.jokeDescription = "";
-     showGlobalMessageAlert("Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen."); 
+     COMMON.showGlobalMessageAlert("Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen."); 
 
 
 

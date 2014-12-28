@@ -1,5 +1,6 @@
 var homeModule = angular.module('homeModule',['ngRoute','jokesMainControllers', 'jokesMainService', 'reviewControllers', 'reviewService'
-	, 'feedbacksMainControllers', 'feedbacksMainService', 'jokesMostLikedControllers'
+	, 'feedbacksMainControllers', 'feedbacksMainService', 'jokesMostLikedControllers', 
+	'videoReviewControllers', 'videoReviewService'
 	]);
 homeModule.config(['$routeProvider', function($routeProvider){
 
@@ -13,7 +14,9 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/jokes/videolist', {templateUrl: 'views/jokes_main/jokes-list-videos-partial.html'})
 		.when('/jokes/upload', {templateUrl: 'views/upload/jokes-video-upload.html'})
 		.when('/jokes/uploadmessage', {templateUrl: 'views/upload/jokes-video-upload-message.html'})
-		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
+		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'})
+		.when('/admn/videoReview', {templateUrl: 'views/admn/review/video-review-list-partial.html', controller: 'videoReviewCtrl'})
+		 ;
 
 }])
 .factory('$exceptionHandler', function () {

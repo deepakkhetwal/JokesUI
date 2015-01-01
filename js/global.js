@@ -1,4 +1,4 @@
-var global = global || [];
+var global = global || {};
 global = {
    WEBSITE_URL: 'http://jokesforkids.herokuapp.com',
   	//WEBSITE_URL: 'http://localhost:8000',

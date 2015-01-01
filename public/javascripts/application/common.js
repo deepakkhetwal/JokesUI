@@ -1,4 +1,4 @@
-var COMMON = COMMON || [];
+var COMMON = COMMON || {};
 COMMON = {
 	closeGlobalMessageAlert : function()
 								{

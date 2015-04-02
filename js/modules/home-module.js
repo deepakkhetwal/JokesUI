@@ -10,6 +10,7 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/jokes/create', {templateUrl: 'views/jokes_main/jokes-post-partial.html', controller:'jokesPostCtrl'})
 		.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
 		.when('/contact', {templateUrl: 'views/contact.html'})
+		.when('/contact2',{templateUrl:'views/contact2.html'})
 		.when('/about',{templateUrl: 'views/about.html'})
 		.when('/jokes/videolist', {templateUrl: 'views/jokes_main/jokes-list-videos-partial.html'})
 		.when('/jokes/upload', {templateUrl: 'views/upload/jokes-video-upload.html'})

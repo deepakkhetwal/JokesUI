@@ -1,6 +1,5 @@
 var            homeModule = angular.module('homeModule',['ngRoute','jokesMainControllers', 'jokesMainService', 'reviewControllers', 'reviewService'
-	, 'feedbacksMainControllers', 'feedbacksMainService','jokesMostLikedControllers', 
-	'videoReviewControllers', 'videoReviewService'
+	, 'feedbacksMainControllers', 'feedbacksMainService','jokesMostLikedControllers'
 	]);
 homeModule.config(['$routeProvider', function($routeProvider){
 
@@ -11,12 +10,8 @@ homeModule.config(['$routeProvider', function($routeProvider){
 		.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
 		.when('/contact', {templateUrl: 'views/contact.html'})
 		.when('/about',{templateUrl: 'views/about.html'})
-		.when('/jokes/videolist', {templateUrl: 'views/jokes_main/jokes-list-videos-partial.html'})
-		.when('/jokes/upload', {templateUrl: 'views/upload/jokes-video-upload.html'})
 		.when('/jokes/uploadmessage', {templateUrl: 'views/upload/jokes-video-upload-message.html'})
-		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'})
-		.when('/admn/videoReview', {templateUrl: 'views/admn/review/video-review-list-partial.html', controller: 'videoReviewCtrl'})
-		 ;
+		.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
 
 }])
 .factory('$exceptionHandler', function () {

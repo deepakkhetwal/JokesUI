@@ -21,3 +21,15 @@ homeModule.config(['$routeProvider', function($routeProvider){
      
     };
 });
+(function(){
+	angular
+		.module('homeModule',['ngRoute',
+			'jokesMainControllers', 
+			'jokesMainServiceModule', 
+			'reviewControllers', 
+			'reviewServiceModule',
+			'feedbacksMainControllers',
+			 'feedbacksMainServiceModule',
+			 'jokesMostLikedControllers'
+	]);
+});

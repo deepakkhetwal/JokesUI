@@ -157,7 +157,7 @@ function indexBy(array, propName) {
   return result;
 }
 
-// extracted from underscore.js
+// extracted from underscore.app
 // Return a copy of the object only containing the whitelisted properties.
 function pick(obj) {
   var copy = {};
@@ -168,7 +168,7 @@ function pick(obj) {
   return copy;
 }
 
-// extracted from underscore.js
+// extracted from underscore.app
 // Return a copy of the object omitting the blacklisted properties.
 function omit(obj) {
   var copy = {};

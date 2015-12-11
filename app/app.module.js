@@ -1,30 +1,50 @@
 (function(){
 	angular
-		.module('app.module',['ngRoute',
-			'jokesMainControllers', 
-			'jokesMainServiceModule', 
-			'reviewControllers', 
-			'reviewServiceModule',
-			'feedbacksMainControllers',
-			 'feedbacksMainServiceModule',
-			 'jokesMostLikedControllers'
+		.module('app',['ui.router',
+			'jokes-main.controller',
+			'jokes-most-liked.controller',
+			'jokes-post.controller',
+			'feedback-post.controller',
+			'review.controller',
+			'jokes-main.service',
+			'feedback.service',
+			'review.service'
 		])
-		.config(['$routeProvider', function($routeProvider){
-			$routeProvider.
-			when('/', {templateUrl: 'views/jokes_main/jokes-list-partial.html', controller: 'jokesMainCtrl'})
-			.when('/jokes/mostliked',{templateUrl: 'views/jokes_main/jokes-most-liked-partial.html', controller: 'jokesMostLikedCtrl'})
-			.when('/jokes/create', {templateUrl: 'views/jokes_main/jokes-post-partial.html', controller:'jokesPostCtrl'})
-			.when('/admn/review', {templateUrl: 'views/admn/review/review-list-partial.html', controller:'reviewIndexCtrl'})
-			.when('/contact', {templateUrl: 'views/contact.html'})
-			.when('/about',{templateUrl: 'views/about.html'})
-			.when('/jokes/uploadmessage', {templateUrl: 'views/upload/jokes-video-upload-message.html'})
-			.when('/feedbacks/create', {templateUrl: 'views/feedback/feedbacks-post-partial.html', controller: 'feedbacksPostCtrl'});
-			}])
-		.factory('$exceptionHandler', function () {
-    return function (exception, cause) {
-    	alert(exception.message);
-      exception.message += ' (caused by "' + cause + '")';
-     	};
-		});
+		.config(function($stateProvider){
+			$stateProvider
+				.state('home',{
+					url: '/',
+					templateUrl: 'views/jokes-list.html',
+					controller: 'JokesMainController',
+					controllerAs: 'vm'
+				})
+				.state('mostLiked',{
+					url: '/mostliked',
+					templateUrl: 'views/jokes-most-liked.html',
+					controller: 'JokesMostLikedController',
+					controllerAs: 'vm'
+				})
+				.state('submitJokes',{
+					url: '/submitjokes',
+					templateUrl: 'views/jokes-post.html',
+					controller: 'JokesPostController',
+					controllerAs: 'vm'
+				})
+				.state('admnReview',{
+					url: '/admnreview',
+					templateUrl: 'views/review-list.html',
+					controller: 'ReviewController',
+					controllerAs: 'vm'
+				})
+				.state('contactUs',{
+					url: '/contactus',
+					templateUrl: 'views/contact-us.html'
+				})
+				.state('postFeedback',{
+					url: '/postfeedback',
+					templateUrl: 'views/feedback-post.html',
+					controller: 'FeedbackPostController'
+				})
 
+		});
 });

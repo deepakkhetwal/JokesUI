@@ -2,65 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1800e87-e0a7-4520-8718-3f2b5680077b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.vscode/tasks.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/admn/review-controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/admn/video-review-controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/feedbacks-main-controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/modules/home-module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/services/admn/review-service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/services/admn/video-review-service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/services/feedbacks-main-service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/services/jokes-main-service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/admn/review/review-list-partial.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/admn/review/video-review-list-partial.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/controllers/contact2feedbackcontroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/views/contact2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/vendor/angular-cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/vendor/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/vendor/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/vendor/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/vendor/angular.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gulp.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/common/util.js" afterPath="$PROJECT_DIR$/app/common/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/release/angular-ui-router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/bower_components/angular-ui-router/src/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/bower_components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/bower" afterPath="$PROJECT_DIR$/node_modules/.bin/bower" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/dateformat" afterPath="$PROJECT_DIR$/node_modules/.bin/dateformat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-indent" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-indent" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/bin/bower" afterPath="$PROJECT_DIR$/node_modules/bower/bin/bower" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/cdl" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/cdl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/decompress-zip" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/decompress-zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/handlebars" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/mkdirp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/nopt" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/nopt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/opn" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/opn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/rimraf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/user-home" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/user-home" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/which" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/.bin/which" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/cardinal/bin/cdl.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/cardinal/bin/cdl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/decompress-zip/bin/decompress-zip" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/decompress-zip/bin/decompress-zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/handlebars/bin/handlebars" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/handlebars/bin/handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/mkdirp/bin/cmd.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/mkdirp/bin/cmd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/nopt/bin/nopt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/opn/cli.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/opn/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/rimraf/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/user-home/cli.js" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/user-home/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bower/node_modules/which/bin/which" afterPath="$PROJECT_DIR$/node_modules/bower/node_modules/which/bin/which" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/dateformat/bin/cli.js" afterPath="$PROJECT_DIR$/node_modules/dateformat/bin/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/node_modules/rimraf/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/strip-indent/cli.js" afterPath="$PROJECT_DIR$/node_modules/strip-indent/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/review-controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/review-list-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/review-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/video-review-controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/video-review-list-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/admn/video-review-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/feedback/feedbacks-main-controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/feedback/feedbacks-main-service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/feedback/feedbacks-post-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-list-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-list-videos-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-most-liked-controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-most-liked-partial.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-most-liked.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/jokes/jokes-post-partial.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/jokes/jokes-main-controllers.js" afterPath="$PROJECT_DIR$/app/jokes/jokes-main.controller.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/jokes/jokes-main-service.js" afterPath="$PROJECT_DIR$/app/jokes/jokes-main.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JokesUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +54,17 @@
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jokes-main.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/jokes/jokes-main.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,8 +93,8 @@
       <file leaf-file-name="app.module.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3723404">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.69148934">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -264,7 +233,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="videos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jokes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokesUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,6 +392,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -423,18 +454,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/common/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jokes/jokes-main.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -449,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3723404">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.69148934">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding />
         </state>
       </provider>

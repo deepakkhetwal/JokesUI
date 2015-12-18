@@ -1,0 +1,45 @@
+<div class="panel panel-info">
+<div class="panel-heading">Please upload funny videos to make kids laugh</div>
+<div class="panel-body">
+  <div class="row">
+  <div class="col-md-12">
+    <form action="https://elasticbeanstalk-us-west-2-780260980507.s3.amazonaws.com/" method="post" 
+    class="form-horizontal" role="form" onsubmit="onUploadSubmit()" enctype="multipart/form-data">
+    <input type="hidden" name="key" value="${filename}" />
+    <input type="hidden" name="acl" value="public-read" />
+    <input type="hidden" name="content-type" value="video" />
+    <input type="hidden" id="hdnSuccessActionRedirect" name="success_action_redirect">
+      <div class="row">
+        <div class="col-md-3">
+          <input name="file" type="file" onchange="onFileChange()" id="fileId" multiple/>
+        </div>
+         <div class="col-md-3">
+          <input name="submit" id="btnSubmit" value="Upload" type="submit" class="disabled btn btn-primary"/>
+          <label id="lblMessage" class="hidden"> Please wait upload in progress..</label>
+        </div>
+      </div>
+     
+      
+  </form>
+ </div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  $('#hdnSuccessActionRedirect').val(global.WEBSITE_URL + '/#/jokes/uploadmessage' );
+});
+function onFileChange()
+{
+  $('#btnSubmit').removeClass('disabled');
+}
+function onUploadSubmit()
+{
+  $('#lblMessage').removeClass('hidden');
+  var fileName = $('input[type=file]').val().split('\\').pop();
+  var arrFileName = fileName.split(".");
+  $('#txtTitle').attr( 'placeholder',arrFileName[0]);
+  $('#hdnFileName').val(arrFileName[0]);
+  $('#hdnFileExt').val(arrFileName[1]);
+}
+
+</script>

@@ -1,5 +1,5 @@
 (function(){
-    'use strict'
+    'use strict';
     angular
         .module('jokes-most-liked.controller')
         .controller('JokesMostLikedController',JokesMostLikedController);
@@ -21,5 +21,5 @@
             $("#"+ id).show();
         }
     }
-})
+})();
 

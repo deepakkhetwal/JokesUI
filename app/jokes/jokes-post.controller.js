@@ -2,7 +2,7 @@
  * Created by dkhetwal on 12/11/2015.
  */
 (function () {
-    'use strict'
+    'use strict';
     angular
         .module('jokes-post.controller')
         .controller('JokesPostController', JokesPostController);
@@ -21,4 +21,4 @@
             COMMON.showGlobalMessageAlert("Your joke submitted successfully!. will be posted after being reviewed. You can post another Joke on the same screen.");
         }
     }
-})
+})();

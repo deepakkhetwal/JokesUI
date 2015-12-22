@@ -1,10 +1,11 @@
 var express = require('express');
 var app = express();
 
-app.use('/static',express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/app'));
+app.use(express.static('content/css'));
+app.use(express.static('content/images'));
+app.use(express.static('js'));
 app.get('/', function(req, res) {
-  res.sendfile('./app/views/shared/_layout-main.html');
+    res.sendfile('./views/layout/shell.html');
 });
 
 app.use(function(req, res, next) {

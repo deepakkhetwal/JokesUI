@@ -14,19 +14,19 @@
                 </thead>
                 <tbody>
 
-                    <tr  ng-repeat="item in videoListForReview.message">
+                    <tr  ng-repeat="item in vm.videoListForReview.message">
                     
                         <td><input type="checkbox" ng-model="item.is_reviewed"></td>
                         <td><textarea ng-model="item.description"></textarea></td>
                         <td><input type="text" ng-model="item.title"></text></td>
                         <td><input type="text" ng-model="item.tags"></text></td>
                        <td><video width="320" height="240" controls>
-                              <source src= "{{trustSrc(item.file_url)}}" type="video/{{item.extension}}">
+                              <source src= "{{vm.trustSrc(item.file_url)}}" type="video/{{item.extension}}">
                             
                             Your browser does not support the video tag.
                             </video>
                         </td>
-                        <td><button class="btn btn-primary" ng-click="SaveVideoReview(item.file_id)" ><span class="glyphicon glyphicon-floppy-disk"></span></button> <button class="btn-success"><span class="glyphicon glyphicon-remove"></span></button></td>
+                        <td><button class="btn btn-primary" ng-click="vm.saveVideoReview(item.file_id)" ><span class="glyphicon glyphicon-floppy-disk"></span></button> <button class="btn-success"><span class="glyphicon glyphicon-remove"></span></button></td>
                     </tr>
                 </tbody>
             </table>

@@ -19,6 +19,6 @@
                 exception: exception,
                 cause:cause
             };
-        }
+        };
     }
-})
+})();

@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var del = require('del');
 var watch = require('gulp-watch');
+var jshint = require('gulp-jshint');
 var sourcePaths={
 	vendorScripts:[
 		'./bower_components/jquery/dist/jquery.min.js',
@@ -59,6 +60,8 @@ gulp.task('vendorScripts',['clean'], function(){
 
 gulp.task('appScripts',['clean'], function(){
 	return gulp.src(sourcePaths.appScripts)
+				.pipe(jshint())
+				.pipe(jshint.reporter('default'))
 				.pipe(uglify())
 				.pipe(concat('all-app.min.js'))
 				.pipe(gulp.dest(distPaths.scripts));

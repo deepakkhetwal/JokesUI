@@ -4,11 +4,10 @@
 			'jokes-main.controller',
 			'jokes-most-liked.controller',
 			'jokes-post.controller',
-			'feedback-post.controller',
-			'review.controller',
+			'feedback.controller',
 			'jokes-main.service',
-			'feedback.service',
-			'review.service'
+			'feedback.service'
+
 		])
 		.config(function($stateProvider){
 			$stateProvider
@@ -30,12 +29,6 @@
 					controller: 'JokesPostController',
 					controllerAs: 'vm'
 				})
-				.state('admnReview',{
-					url: '/admnreview',
-					templateUrl: 'views/review-list.html',
-					controller: 'ReviewController',
-					controllerAs: 'vm'
-				})
 				.state('contactUs',{
 					url: '/contactus',
 					templateUrl: 'views/contact-us.html'
@@ -43,8 +36,8 @@
 				.state('postFeedback',{
 					url: '/postfeedback',
 					templateUrl: 'views/feedback-post.html',
-					controller: 'FeedbackPostController'
-				})
+					controller: 'FeedbackController'
+				});
 
 		});
-});
+})();

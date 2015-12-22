@@ -2,7 +2,7 @@
  * Created by dkhetwal on 12/11/2015.
  */
 (function(){
-    'use strict'
+    'use strict';
     angular
         .module(notification.service)
         .factory('notificationService',notificationService);
@@ -20,4 +20,4 @@
                 toastr.error(message);
             }
         }
-})
+})();

@@ -4,7 +4,7 @@
 (function () {
     'use strict';
     angular
-        .module('jokes-post.controller')
+        .module('jokes-post.controller',[])
         .controller('JokesPostController', JokesPostController);
     JokesPostController.$inject = ['jokesMainService'];
     function JokesPostController(jokesMainService){

@@ -1,7 +1,7 @@
 (function(){
     'use strict';
     angular
-        .module('feedback.controller')
+        .module('feedback.controller',[])
         .controller('FeedbackController', FeedbackController);
     FeedbackController.$inject = ['feedbackService'];
     function  FeedbackController(feedbackService){

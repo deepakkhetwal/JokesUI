@@ -4,7 +4,7 @@
 (function(){
     'use strict';
     angular
-        .module(notification.service)
+        .module('notification.service',[])
         .factory('notificationService',notificationService);
         notificationService.$inject = ['logger'];
         function notificationService(logger){

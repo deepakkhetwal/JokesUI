@@ -1,14 +1,14 @@
 (function(){
     'use strict';
     angular
-        .module('jokes-most-liked.controller')
+        .module('jokes-most-liked.controller',[])
         .controller('JokesMostLikedController',JokesMostLikedController);
     JokesMostLikedController.$inject = ['jokesMainService'];
     function JokesMostLikedController(jokesMainService){
         var vm = this;
         vm.dataLoaded = false;
         vm.jokesList = [];
-        vm.postLike = postLike(id);
+        vm.postLike = postLike;
         loadJokes();
         function loadJokes(){
             $scope.jokesList = jokesMainService.GetMostLikedList.query(function(){$scope.dataLoaded = true;});

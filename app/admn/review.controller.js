@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 	angular
-		.module('review.controller')
+		.module('review.controller',[])
 		.controller('ReviewController',ReviewController);
 	ReviewController.$inject = ['reviewService'];
 	function ReviewController(reviewService){

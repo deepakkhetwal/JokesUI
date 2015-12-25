@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 	angular
-		.module('video-review.controller')
+		.module('video-review.controller',[])
 		.controller('VideoReviewController', VideoReviewController);
 	VideoReviewController.$inject = ['$sce', 'videoReviewService'];
 	function VideoReviewController($sce, videoReviewService) {

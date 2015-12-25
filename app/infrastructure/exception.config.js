@@ -3,7 +3,7 @@
  */
 (function(){
     angular
-        .module('exception.config')
+        .module('exception.config',[])
         .config(exceptionConfig);
     exceptionConfig.$inject = ['$provide'];
     function exceptionConfig($provide){

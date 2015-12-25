@@ -47,8 +47,8 @@ gulp.task('clean', function(){
 			,'!./dist/js'
 			,'./dist/views/**'
 			,'!./dist/views'
-			,'./dist/bin/**/*',
-			,'./dist/node_modules/*'
+			,'./dist/bin/**/*'//,
+			//,'./dist/node_modules/*'
 		]);
 });
 
@@ -62,7 +62,7 @@ gulp.task('appScripts',['clean'], function(){
 	return gulp.src(sourcePaths.appScripts)
 				.pipe(jshint())
 				.pipe(jshint.reporter('default'))
-				.pipe(uglify())
+				//.pipe(uglify())
 				.pipe(concat('all-app.min.js'))
 				.pipe(gulp.dest(distPaths.scripts));
 });
@@ -93,16 +93,17 @@ gulp.task('appViews',['clean'], function(){
 		.pipe(gulp.dest(distPaths.views));
 });
 
-gulp.task('npm',['clean'], function(){
+/*gulp.task('npm',['clean'], function(){
 	return gulp.src(sourcePaths.npm)
 		.pipe(gulp.dest(distPaths.npm));
-});
+}); */
 gulp.task('watch', function(){
-	gulp.watch(sourcePaths.appScripts,['appScripts']);
+	gulp.watch(sourcePaths.appScripts,['default']),
+	gulp.watch(sourcePaths.appViews,['default']);
 	//gulp.watch(sourcePaths.vendorScripts,['vendorScripts']);
 });
 
-gulp.task('default',['watch','vendorScripts','appScripts','vendorCSS','images','binScripts','rootScripts','appViews','npm']);
+gulp.task('default',['watch','vendorScripts','appScripts','vendorCSS','images','binScripts','rootScripts','appViews']);
 
 
 
